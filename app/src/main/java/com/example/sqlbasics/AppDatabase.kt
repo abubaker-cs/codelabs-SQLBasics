@@ -21,7 +21,7 @@ import androidx.room.Room
 import androidx.room.RoomDatabase
 
 @Database(entities = arrayOf(CaliforniaPark::class), version = 1)
-abstract class AppDatabase: RoomDatabase() {
+abstract class AppDatabase : RoomDatabase() {
     abstract fun californiaParkDao(): CaliforniaParkDao
 
     companion object {
