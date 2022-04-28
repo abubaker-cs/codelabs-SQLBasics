@@ -26,9 +26,12 @@ abstract class AppDatabase : RoomDatabase() {
 
     //
     companion object {
+
+        //
         @Volatile
         private var INSTANCE: AppDatabase? = null
 
+        //
         fun getDatabase(
             context: Context
         ): AppDatabase {
@@ -45,5 +48,6 @@ abstract class AppDatabase : RoomDatabase() {
                 instance
             }
         }
+        
     }
 }
