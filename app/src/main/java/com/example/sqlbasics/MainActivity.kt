@@ -17,6 +17,7 @@ package com.example.sqlbasics
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.sqlbasics.data.AppDatabase
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 

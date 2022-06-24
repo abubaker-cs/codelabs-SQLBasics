@@ -13,13 +13,20 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.sqlbasics
+package com.example.sqlbasics.data
 
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
+import com.example.sqlbasics.model.CaliforniaPark
 
+/**
+ * FILE 03
+ *
+ * Room database to persist data for the Shoes Planet app.
+ * This database stores a [CaliforniaPark] entity
+ */
 @Database(entities = arrayOf(CaliforniaPark::class), version = 1)
 abstract class AppDatabase : RoomDatabase() {
     abstract fun californiaParkDao(): CaliforniaParkDao

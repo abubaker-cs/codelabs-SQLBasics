@@ -13,12 +13,18 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.sqlbasics
+package com.example.sqlbasics.data
 
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.Query
+import com.example.sqlbasics.model.CaliforniaPark
 
+/**
+ * FILE 02
+ *
+ * Data Access Object for database interaction.
+ */
 @Dao
 interface CaliforniaParkDao {
 

@@ -13,12 +13,17 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.sqlbasics
+package com.example.sqlbasics.model
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
+/**
+ * FILE 01
+ *
+ * Shoe entity to be stored in the shoes_database.
+ */
 @Entity(tableName = "park")
 data class CaliforniaPark(
     @PrimaryKey(autoGenerate = true) val id: Int,
